@@ -1,0 +1,38 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "A one page site made using the news api",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexsophiekim/news.git"
+  },
+  "keywords": [
+    "newsapi",
+    "js",
+    "html",
+    "css"
+  ],
+  "author": "Brayden and Sophie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexsophiekim/news/issues"
+  },
+  "homepage": "https://github.com/alexsophiekim/news#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
