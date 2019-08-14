@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  const newsArticleList = $("#newsArticleList");
+
 $.ajax({
   url: '../config.json',
   type: 'GET',
@@ -19,7 +22,14 @@ getNewsData = () => {
     dataType: 'json',
     success: function(dataFromNewsApi){
       console.log(dataFromNewsApi);
-
+      newsArticleList.empty();
+      if (dataFromNewsApi.articles.length === 0) {
+        newsArticleList.append(`There are no news articles`);
+      } else {
+        dataFromNewsApi.articles.map(function(articles){
+          newsArticleList.append(`<li>${articles.title}, ${articles.description}`)
+        })
+      }
     },
     error: function(){
       console.log("something went wrong");
