@@ -46,11 +46,11 @@ const aboutPage = $("#aboutPage");
 homeBtn.click(function(){
   aboutPage.removeClass("d-block").addClass("d-none")
   container.removeClass("bg-dark").addClass("bg-light");
-  newsArticleList.removeClass("d-none").addClass( "d-block" );
+  newsPage.removeClass("d-none").addClass( "d-block" );
 });
 
 aboutBtn.click(function(){
-  newsArticleList.removeClass("d-block").addClass("d-none")
+  newsPage.removeClass("d-block").addClass("d-none")
   container.removeClass("bg-light, py-5").addClass("bg-dark");
   aboutPage.removeClass("d-none").addClass( "d-block" );
 
